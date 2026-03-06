@@ -186,7 +186,6 @@ section{
 }
 
 @media (max-width:768px){
-<<<<<<< HEAD
     .hero-text p {
     font-family: 'Jersey 10' , monospace;
     margin-bottom: 40px;
@@ -201,38 +200,19 @@ section{
     border: 1px solid transparent;
     line-height: 3.4;
     font-size: 18px;
-=======
-
-             .hero-text a{
-    display: flexbox;
-    flex-direction: column;
-    background-color: rgb(7, 5, 20);
-    border: 1px solid transparent;
-    padding: 15px 20px;
-    line-height: 1.4;
-    font-size: 22px;
->>>>>>> 1a159389a5d80233b551e752132f061d2ec3a05b
     font-weight: 800;
     border-radius: 20px;
     transition: all .5s ease;
 
 }
 .hero-text a i {
-<<<<<<< HEAD
     font-size: 18px;
-=======
-    font-size: 22px;
-    margin-right: 5px;
->>>>>>> 1a159389a5d80233b551e752132f061d2ec3a05b
 }
 
 .hero-text a.instagram{
     margin-right: 30px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 1a159389a5d80233b551e752132f061d2ec3a05b
         
         .menu-icon-action {
             display: block;
@@ -276,7 +256,6 @@ section{
         #menu-toggle:checked + label.menu-icon-action + ul{
             right: 0;
         }
-
 
 
 
