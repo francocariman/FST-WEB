@@ -227,7 +227,7 @@ section{
         }
     .hero-img img:hover
 {
-    width: 403px;
+    width: 100%
     opacity: 0.6;
 }
         .hero-img img {
@@ -265,5 +265,6 @@ section{
 
 
 }
+
 
 
