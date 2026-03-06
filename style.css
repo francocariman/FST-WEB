@@ -186,23 +186,27 @@ section{
 }
 
 @media (max-width:768px){
+    .hero-text p {
+    font-family: 'Jersey 10' , monospace;
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 20px;
+}
 
         .hero-text a{
     display: flexbox;
-    flex-direction: column;
+    align-self:auto;
     background-color: rgb(7, 5, 20);
     border: 1px solid transparent;
-    padding: 15px 20px;
-    line-height: 1.4;
-    font-size: 22px;
+    line-height: 3.4;
+    font-size: 18px;
     font-weight: 800;
     border-radius: 20px;
     transition: all .5s ease;
 
 }
 .hero-text a i {
-    font-size: 22px;
-    margin-right: 5px;
+    font-size: 18px;
 }
 
 .hero-text a.instagram{
