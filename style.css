@@ -225,6 +225,11 @@ section{
             text-align: center;
             padding-top: 100px;
         }
+    .hero-img img:hover
+{
+    width: 410px;
+    opacity: 0.6;
+}
         .hero-img img {
             margin: 0;
         }
@@ -260,3 +265,4 @@ section{
 
 
 }
+
