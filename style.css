@@ -225,14 +225,18 @@ section{
             text-align: center;
             padding-top: 100px;
         }
-    .hero-img img:hover
-{
-    width: 100%
-    opacity: 0.6;
-}
-        .hero-img img {
+            .hero-img img {
+            height:200px;
+            width:200px;
             margin: 0;
         }
+    .hero-img img:hover
+{
+    width: 250px;
+    height:250px;
+    opacity: 0.6;
+}
+
 
         .hero {
             height: 100%;
