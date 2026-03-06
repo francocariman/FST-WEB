@@ -1,0 +1,235 @@
+/* Normalización */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box; /*Esto mantiene el ancho y el alto a pesar de padding y*/
+    font-family: 'Orbitron' monospace;
+    list-style: none; /* Quita los puntos o decoración de listas*/
+    text-decoration: none; /*Quita subrayado de enlaces*/
+    color:white;
+}
+
+body{
+    background-color: blue; /*TO DO: borrar cuando tenga el fondo final*/
+}
+
+header{
+    position: fixed;/*Header fijo en parte sup*/
+    right: 0;
+    top: 0;
+    z-index: 100; /*Hace q el header se muestre por encima*/
+    width: 100%;
+    display: flex;/*Elementos en lineas*/
+    align-items: center; /*Centra verticalmente*/
+    justify-content: space-between;/*Elementos se separan*/
+    padding: 15px 3%;
+    background-color: transparent;
+
+
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 800;
+
+}
+
+.navlist {
+    display: flex; /*elementos de la lista en linea*/
+
+}
+
+.navlist a {
+    font-family: 'Jersey 10' , monospace;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;/*subrayado transparente*/
+    transition: all .5s ease; /*Animar todas las caracteristicas del .navlist a*/
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white; /*Esto muestra el subrayado cuando nos posamos sobre el elemento*/
+}
+ #menu-icon { 
+    display: none; /*Solo se ve cuando la pagina colapsa (CELU)*/
+}
+#menu-icon
+{
+    font-size: 35px;
+    z-index: 101; /*para q este sobre el header*/
+    cursor: pointer; /*Para q aparezca cursor maniti */
+}
+
+#menu-toggle{
+    display: none; /*nunca quiero q se vea el checkbox*/
+}
+#menu-icon-action
+{
+    display: none; /*Para q no se le pueda hacer click*/
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(360.90deg, #050449,#073291 25%,#2600ff 75%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 8%;
+}
+
+.hero-text h4{
+    font-family: 'Jersey 10' , monospace;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.hero-text h1{
+    font-family: 'Orbitron' , monospace;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+
+.hero-img img{
+    width: 400px;
+    margin: 10% 0 0 10%;
+    height: auto;
+    transition: all 1.5s linear; /* hace q la transición sea lineal*/
+
+}
+.hero-img img:hover
+{
+    width: 450px;
+    opacity: 0.6;
+}
+
+.hero-text {
+    font-size: 80%;
+    margin-bottom: 40px;
+    line-height: 1.9;
+
+}
+
+.hero-text p {
+    font-family: 'Jersey 10' , monospace;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.hero-text a{
+    align-items: center;
+    display: flexbox;
+    background-color: rgb(7, 5, 20);
+    border: 1px solid transparent;
+    padding: 15px 20px;
+    line-height: 1.4;
+    font-size: 22px;
+    font-weight: 800;
+    border-radius: 20px;
+    transition: all .5s ease;
+
+}
+.hero-text a i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.hero-text a.instagram{
+    margin-right: 30px;
+}
+
+.hero-text a.instagram:hover {
+
+    background-color: rgb(161, 38, 192);
+    border: 1px solid white;
+    transform: translateX(8px);
+
+}
+
+.hero-text a.whatsapp:hover {
+
+    background-color: rgb(27, 194, 41);
+    border: 1px solid white;
+    transform: translateX(8px);
+
+}
+
+@media (max-width:992px){
+
+section{
+    padding:0 3%;
+    transition: .2s;
+    
+}
+
+.hero-text{
+    padding-top: 0;
+
+}
+.hero-img {
+    text-align: center;
+}
+
+.hero-img img{
+    width: 80%;
+    margin: 10% 0 0 10%;
+}
+
+}
+
+@media (max-width:768px){
+        
+        .menu-icon-action {
+            display: block;
+        }
+
+        #menu-icon{
+            display: block;
+        }
+        .hero-text {
+            text-align: center;
+            padding-top: 100px;
+        }
+        .hero-img img {
+            margin: 0;
+        }
+
+        .hero {
+            height: 100%;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+        }
+        .navlist {
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            width: 200px;
+            height: 180px;
+            background-color: rgba(4, 3, 44, 0.651);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+            transition: all .5s ease-out;
+
+        }
+        .navlist a{
+            display: block;
+            margin: 7px 0;
+        }
+
+        #menu-toggle:checked + label.menu-icon-action + ul{
+            right: 0;
+        }
+
+
+
+}
